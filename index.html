@@ -1,70 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Filmku Movie</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Ruben's Personal Pages, in this website you can know more about me.">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ruben's Profile Page</title>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-primary bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          Filmku Movie
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav>
 
-    <div class="container">
-      <div class="row mt-3 justify-content-center">
-        <div class="col-md-8">
-          <h1 id="NavbarClick" class="text-center" style="color:blue">Search Filmku</h1>
-            <div class="input-group mb-3">
-              <input id="search-input" type="text" class="form-control" placeholder="Movie Title..">
-              <div class="input-group-append">
-                <button id="search-button" type="button" class="btn btn-primary" name="button">Search</button>
-              </div>
-            </div>
-        </div>
-      </div>
+  <table cellspacing="20px">
+    <tr>
+      <td>
+        <img src="img/circle-cropped.png" width="200px;" alt="ruben profil picture" style="border-radius:70%;">
+      </td>
+      <td>
+        <h1>Ruben Manurung</h1>
+        <em>
+          <strong>
+            <p>Web Developer</p>
+          </strong>
+        </em>
+        <p>
+          I am Fresh Graduate student majoring in Diploma Three <strong><em>Technology Information</em></strong> from <a href="https://www.del.ac.id/">Institut Teknologi Del.</a>
+          I am passioning <strong>Design</strong> and <strong>Website Developer</strong>. I like new challenge that can improve my knowledge and skill.
+          I am experience work in individual or in team. I have great communication skill.
+        </p>
+      </td>
+    </tr>
+  </table>
 
-      <hr>
+  <hr>
 
-        <div class="row mt-3" id="list-movie">
+  <a href="contact.html">My Contact Person</a>
+  <ul>
+    <li>Teaching Assistant for <i>Pengenalan Sistem Informasi Basis Data (PSIBD)</i> for Bioprocess Engineering students in semester VI</li>
+    <li>Web Developer for Kominfo Tapanuli Utara</li>
+  </ul>
 
-        </div>
-    </div>
+  <a href="project.html">Project Has Been Done</a>
 
+  <hr>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Movie Detail</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+  <table cellspacing="20px" align="center">
+    <thead>
+      <caption><b>Skills</b></caption>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Web Development</td>
+        <td>⭐⭐⭐⭐</td>
+        <td>Front End Developer</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Back End Developer</td>
+        <td>⭐⭐⭐⭐</td>
+        <td>UI/UX</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Mobile Developer</td>
+        <td>⭐⭐⭐⭐</td>
+        <td>Database Administrator</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <table cellspacing="10px">
+    <form action="mailto:ruben@gmail.com" method="post" enctype="text/plain">
+      <tr>
+        <td>
+          <label>Username</label>
+        </td>
+        <td>
+          <input type="text" name="username">
+        </td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td>
+          <input type="password">
+        </td>
+      </tr>
+      <tr>
+        <td>Your Email</td>
+        <td>
+          <input type="email" name="password" value="">
+        </td>
+      </tr>
+      <tr>
+        <td>Birthday</td>
+        <td>
+          <input type="date" name="date">
+        </td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="gender" id="woman">
+          <label for="woman">Woman</label>
+          <input type="radio" name="gender" id="man">
+          <label for="man">Man</label>
+        </td>
+      </tr>
+      <tr>
+        <td>How you Interest to me?</td>
+        <td>
+          <input type="range" name="range" min="0" max="10">
+        </td>
+      </tr>
+      <tr>
+        <td>Your Favorite Color</td>
+        <td>
+          <input type="color" name="color">
+        </td>
+      </tr>
+      <tr>
+        <td>Religion</td>
+        <td>
+          <select name="religion">
+            <option value="">--Please choose an option--</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Hindu">Hindu</option>
+            <option value="another">Another</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Describe About you</label>
+        </td>
+        <td>
+          <textarea name="name" rows="8" cols="80" name="Describe"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <fieldset>
+            <legend>Aggrement</legend>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <input type="checkbox" name="aggree">
+            <label for="">I am Aggree.</label>
+          </fieldset>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit"></td>
+      </tr>
+    </form>
+  </table>
 
 </body>
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/script.js"></script>
+
 </html>
