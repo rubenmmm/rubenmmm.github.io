@@ -188,14 +188,6 @@ body {
   font-size: 1.2rem;
 }
 
-button {
-  position: absolute;
-  margin: 200px 0px 0px 45%;
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
 .body-about {
   background: url(../images/about-page.webp);
   background-repeat: no-repeat;
@@ -203,45 +195,22 @@ button {
   background-attachment: fixed;
 }
 
-.intro {
-  margin-top: 150px;
-  font-weight: bold;
-  line-height: 1.8rem;
-}
-
-.about-us .image-fluid {
-  height: 500px;
-  width: 100%;
-}
-
-.about-us .bulat {
-  width: 350px;
-  height: 350px;
-  background: linear-gradient(to right, rgb(0, 41, 87), rgb(43, 11, 0));
-  border-radius: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 150px;
-  left: 190px;
-}
-
-.about-us .bulat:hover {
-  height: 550px;
-  width: 550px;
+.about-demo {
+  padding-top: 20%;
 }
 
 /* Animation properties */
-.star {
-  animation: star 10s ease-out infinite;
+.about-ruben {
+  animation: star 7s ease-out infinite;
 }
 
 .wars {
-  animation: wars 10s ease-out infinite;
+  animation: wars 7s ease-out infinite;
   color: #fff;
 }
 
-.byline span {
-  animation: spin-letters 10s linear infinite;
+.byline span, .btn {
+  animation: spin-letters 7s linear infinite;
 }
 
 .byline {
@@ -321,41 +290,25 @@ button {
   }
 }
 
-/* Make the 3D work on the container */
-.starwars-demo {
-  perspective: 800px;
-  transform-style: preserve3d;
-}
-
-/* General styles and layout */
-body {
-  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
-}
-
-.starwars-demo {
-  height: 17em;
-  left: 50%;
-  position: absolute;
-  top: 53%;
-  transform: translate(-50%, -50%);
-  width: 34em;
-}
-
 .byline span {
   display: inline-block;
 }
 
-.star, .wars, .byline {
-  position: absolute;
+.contact-button {
+  top: 3px;
+  text-align: center;
+  color: #fff;
+  border-radius: 200%;
 }
 
-.star {
-  top: -0.75em;
+.about-ruben {
   color: #fff;
+  text-align: center;
 }
 
 .wars {
-  bottom: -0.5em;
+  bottom: 0em;
+  text-align: center;
 }
 
 .byline {
@@ -364,21 +317,31 @@ body {
   font-size: 2.25em;
   left: -2em;
   letter-spacing: 0.4em;
-  right: -2em;
   text-align: center;
+  right: -2em;
   text-transform: uppercase;
   top: 29%;
 }
 
+.card {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.contact-list {
+  padding-top: 100px;
+}
+
 /*** Media queries for adjusting to different screen sizes ***/
 @media only screen and (max-width: 600px) {
-  .starwars-demo {
+  .about-demo {
     font-size: 10px;
+    padding-top: 60%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .starwars-demo {
-    font-size: 7px;
+  .about-demo {
+    font-size: 5px;
   }
 }
